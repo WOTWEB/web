@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>主页</title>
+<link rel="icon" href="../frame/bootstrap/docs/favicon.ico">
+<!-- Bootstrap core CSS -->
+<link href="../frame/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="../frame/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet">
+<script src="../pages/js/jquery/JQuery.js"></script>
+<script src="../frame/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="btn-group">
+		<ul class="nav nav-pills">
+			<li role="presentation" class="active"><a href="#">主页</a></li>
+			<li role="presentation"><a href="#">个人信息</a></li>
+			<li role="presentation"><a href="#">消息</a></li>
+			<li role="presentation" class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">操作<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">4</a></li>
+				</ul>
+			</li>
+			<li><a data-toggle="modal" data-target="#signup">注册</a></li>
+		</ul>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="signup" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<form class="form-signin">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">注册</h4>
+					</div>
+					<div class="modal-body">
+						<!-- <h3 class="form-signin-heading">sign up</h3> -->
+						<label for="inputEmail" class="sr-only">用户名</label>
+						<input type="email" id="inputEmail" class="form-control" placeholder="用户名" required autofocus/>
+						<label for="inputPassword" class="sr-only">密码</label>
+						<input type="password" id="inputPassword" class="form-control" placeholder="密码" required/>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button class="btn btn-primary" type="submit">注册</button>	
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
